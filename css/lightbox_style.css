@@ -1,0 +1,94 @@
+#lightbox {  
+ display:none;  
+ background:#000000;  
+ border: 10px solid #000000;
+ opacity:0.9;  
+ position: fixed;
+ filter:alpha(opacity=90);   
+ top:0px;  
+ left:0px;    
+ width:100%;  
+ height:100%;  
+ z-index:1000;  
+}  
+/* Lightbox panel with some content */  
+#lightbox-panel {  
+ display:none;  
+ position:relative;
+ top:100px;  
+ width:500px; 
+ height:400px; 
+ background:#FFFFFF;  
+ text-align: center;
+ margin-left:auto;
+ margin-right:auto;
+ border:0px solid #CCCCCC;  
+ z-index:1001;  
+}
+
+#lightbox-container {  
+ display:none;  
+ position:relative;  
+ top:0px;  
+ margin-left:auto;
+ margin-right:auto;
+ text-align: left; 
+ width:450px; 
+ height:310px; 
+ border:1px solid #000000;  
+ background:#FFFFFF;  
+ z-index:1002;  
+}
+
+#lightbox-container-2 {  
+ display:none;  
+ position:relative;  
+ top:0px;  
+ margin-left:auto;
+ margin-right:auto;
+ text-align: left; 
+ width:450px; 
+ height:310px; 
+ border:1px solid #000000;  
+ background:#FFFFFF;  
+ z-index:1003;  
+}
+
+#lightbox-container-3 {  
+ display:none;  
+ position:relative;  
+ top:0px;  
+ margin-left:auto;
+ margin-right:auto;
+ text-align: left; 
+ width:450px; 
+ height:310px; 
+ border:1px solid #000000;  
+ background:#FFFFFF;  
+ z-index:1004;  
+}
+
+#lightbox-container-sav {  
+ display:none;  
+ position:relative;  
+ top:0px;  
+ margin-left:auto;
+ margin-right:auto;
+ text-align: left; 
+ width:450px; 
+ height:310px; 
+ border:1px solid #000000;  
+ background:#FFFFFF;  
+ z-index:1005;  
+}
+
+#close-panel {  
+ position:relative;  
+ top:2px;    
+ z-index:1010;  
+}
+
+#titlepanel {  
+ margin-bottom:5px;
+ text-decoration: none;   
+}
