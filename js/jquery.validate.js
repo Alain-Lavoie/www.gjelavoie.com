@@ -1,0 +1,1 @@
+testmycalltoalert(){    alert('Handler for .submit() called.');}
