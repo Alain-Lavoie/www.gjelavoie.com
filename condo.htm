@@ -1,13 +1,47 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><title>GJE Lavoie | Condominiums</title>
 
-<meta content="Groupe ,GJE , Lavoie ,Le Frontance Dollard-des-Ormeaux 4025 Boul des Soures , Le Britanica 14382 ( Maison Model) Harry-Worth , Pierrefonds." name="Keywords" />
-<meta content="Groupe GJE Lavoie inc is a constructor, building in Dollard-des-Ormeaux , and Pierrefonds." name="Description" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link type="text/css" href="css/menu_style.css" rel="stylesheet" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>GJE Lavoie | Condominiums</title>
+  <meta content="Groupe ,GJE , Lavoie ,Le Frontance Dollard-des-Ormeaux 4025 Boul des Soures , Le Britanica 14382 ( Maison Model) Harry-Worth , Pierrefonds." name="Keywords" />
+  <meta content="Groupe GJE Lavoie inc is a constructor, building in Dollard-des-Ormeaux , and Pierrefonds." name="Description" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link type="text/css" href="css/menu_style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/menu_style.css" type="text/css" />
+  <link href="css/lightbox_style.css" type="text/css" rel="stylesheet" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="js/lightbox-life.js"></script>
+  
+  
 </head>
 <body>
+
+<div id="lightbox-panel">
+  <h2 id="titlepanel">Envoyer votre demande</h2>
+  <div id="lightbox-container"> <iframe
+    src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEhHbkl1Wmhzd2V3aHJ0cmNrUzJ5VlE6MQ"
+    marginheight="0" marginwidth="0" frameborder="0"
+    height="100%" width="100%">Loading...</iframe> </div>
+  <div id="lightbox-container-2"> <iframe
+    src="https://docs.google.com/a/gjelavoie.com/spreadsheet/embeddedform?formkey=dHduOVhIclNGcEJCYWhiNVQtOEU4MWc6MQ"
+    marginheight="0" marginwidth="0" frameborder="0"
+    height="100%" width="100%">Loading...</iframe></div>
+  <div id="lightbox-container-3"> <iframe
+    src="https://docs.google.com/spreadsheet/embeddedform?formkey=dFJhYTY0SVZ5SG9GNVJjMDRsZU1XVGc6MQ"
+    marginheight="0" marginwidth="200" frameborder="0"
+    height="100%" width="100%">Loading...</iframe> </div>
+  <div id="lightbox-container-sav"> <iframe
+    src="https://docs.google.com/spreadsheet/embeddedform?formkey=dFBJM1A0dVFSVjlTb1A1TFV4Tk1MM2c6MQ" 
+	marginheight="0" marginwidth="0" frameborder="0"
+	width="100%" height="100%">Loading...</iframe> </div>
+  <p align="center"> <a id="close-panel" href="#">Close this window</a> </p>
+</div>
+<div id="lightbox"> </div>
+
+
+
+
+
 <table id="table" align="center" width="200">
 <tbody>
 <tr>
@@ -19,8 +53,7 @@
 <li><a href="index.html" target="_self">Accueil</a></li>
 <li><a href="condo.htm" target="_self">Condominiums</a></li>
 <li><a href="maison.htm" target="_self">Maisons</a></li>
-<li><a href="mailto:sav@gjelavoie.com%20" target="_self">Service
-après vente</a></li>
+<li><a id="show-emailus-sav" href="#" target="_self">Service après vente</a></li>
 <li><a href="contact.htm" target="_self">Contact</a></li>
 <li><a href="condo.html" target="_self">English</a></li>
 </ul>
@@ -28,7 +61,11 @@ après vente</a></li>
 </tr>
 <tr>
 <td><img src="images/flower.jpg" class="image" height="267" width="173" />
-<div align="center"><img src="images/extranav.jpg" name="extranav" usemap="#extranavMap" id="extranav" border="0" height="25" width="621" /> <map name="extranavMap" id="extranavMap"><area shape="rect" coords="473,3,607,23" href="mailto:info@gjelavoie.com" alt="Inscrivez-nous" /><area shape="rect" coords="5,3,148,24" href="contact.htm" alt="Contactez-nous" /></map>
+<div align="center"><img src="images/extranav.jpg" name="extranav" usemap="#extranavMap" id="extranav" border="0" height="25" width="621" /> 
+<map name="extranavMap" id="extranavMap">
+  <area id="show-emailus-title" coords="473,3,607,23" href="#" alt="Inscrivez-nous" />
+  <area shape="rect" coords="5,3,148,24" href="contact.htm" alt="Contactez-nous" />
+</map>
 </div>
 <h1>Le Frontenac</h1>
 <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 280px; height: 163px;" alt="" src="images/frotenac-PhaseI.jpg" />
@@ -37,37 +74,37 @@ après vente</a></li>
 <table border="0" width="801">
 <tbody>
 <tr>
-<td width="425">
+<td style="width: 425px;">
 <h2>Phase&nbsp;I</h2>
-<p>Le FrontAlthough the building is sold out, the
-current clients only can
-still purchase some area available:</p>
-<table style="text-align: center; height: 57px; width: 261px;" border="0">
+<p>Les unités privatifs du Frontenac Phase I sont
+vendus à 100%. En revanche, quelques stationnements intérieurs (garage)
+et extérieurs sont toujours en stock. Ces produits sont disponibles
+pour les co-propriétaires du bâtiment, exclusivement:</p>
+<table style="text-align: center; width: 388px; height: 50px;" border="0">
 <tbody>
 <tr style="text-align: center;">
-<td style="text-align: center;" width="50">
-</td>
-<td style="font-weight: bold;" width="250">
-<div class="demo-button"><a href="parkings.html">Parking's Auction</a>
+<td style="text-align: center;" width="120"></td>
+<td style="font-weight: bold;" width="300">
+<div class="demo-button"><a href="parkings.html">&gt;&gt; &nbsp;Enchères
+Stationnements</a>
 </div>
 </td>
-<td> </td>
+<td style="width: 50px;"> </td>
 </tr>
 </tbody>
 </table>
 <h2>Phase II</h2>
 <p>Le Frontenac vous propose ses dernières unités de
-condos dont ses magnifiques&nbsp;</p>
-<table style="text-align: center; width: 261px;" border="0">
+condos dont ses magnifiques:</p>
+<table style="text-align: center; height: 50px; width: 386px;" border="0">
 <tbody>
 <tr>
-<td width="425">
-</td>
+<td style="width: 135px;"></td>
 <td style="font-weight: bold;">
-<div class="demo-button"><a href="penthousefr.htm">Penthouses</a>
+<div class="demo-button"><a href="penthousefr.htm">&gt;&gt; &nbsp;Penthouses</a>
 </div>
 </td>
-<td> </td>
+<td style="width: 65px;"> </td>
 </tr>
 </tbody>
 </table>
@@ -213,7 +250,8 @@ des ventes pour les:</big></big></big>&nbsp; <a href="penthousefr.htm"><big styl
 <td id="footer" valign="top">
 <p class="footertext"><a href="index.html">Accueil</a>
 | <span class="linkunderline">Condominiums</span> |
-<a href="maison.htm">Maisons</a> | <a href="mailto:sav@gjelavoie.com">Service après vente</a>
+<a href="maison.htm">Maisons</a> | <a id="show-emailus-sav" href="#">Service après vente</a>
+
 | <a href="contact.htm">Contact</a> | <a href="condo.html">English</a></p>
 <p class="footertext">Tous droits réservés ©
 2011-2012 - <a href="http://www.idibook.com">idibook</a>
@@ -222,5 +260,23 @@ des ventes pour les:</big></big></big>&nbsp; <a href="penthousefr.htm"><big styl
 </tr>
 </tbody>
 </table>
-<map name="Map" id="Map"><area shape="rect" coords="646,87,758,105" href="mailto:info@gjelavoie.com" alt="info@gjelavoie.com" /></map>
+<map name="Map" id="Map">
+<area id="show-emailus-title"  shape="rect" coords="646,87,758,105" href="#" alt="info@gjelavoie.com" />
+
+</map>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6392279-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 </body></html>

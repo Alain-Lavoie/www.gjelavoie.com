@@ -40,3 +40,16 @@
      $("#lightbox, #lightbox-panel, #lightbox-container, #lightbox-container-2, #lightbox-container-3, #lightbox-container-sav").fadeOut(500);  
    });  
  })  
+
+ function afficherPrixStat(root) {
+  var sourceContenu = root.entry.content;
+  prixStat = sourceContenu.$t;
+  document.getElementById("divPrixStat").innerHTML = "" + prixStat + " $<br />(+taxes)";
+}
+ 
+function afficherPrixGarage(root) {
+  var sourceContenu = root.entry.content;
+  prixGarage = sourceContenu.$t;
+  document.getElementById("divPrixGarage").innerHTML = "" + prixGarage + " $<br />(+taxes)";
+}
+    

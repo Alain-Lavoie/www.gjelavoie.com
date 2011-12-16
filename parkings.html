@@ -6,6 +6,10 @@
 <meta name="Description" content="Groupe GJE Lavoie inc is a constructor, building in Dollard-des-Ormeaux , and Pierrefonds." />
 <link href="css/style.css" type="text/css" rel="stylesheet" />
 <link rel="stylesheet" href="css/menu_style.css" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>    
+<script src="js/lightbox-life.js"></script>  
+
+  
 </head>
 <body>
 <table id="table" align="center" width="200">
@@ -31,54 +35,85 @@ après vente</a></li>
 <div align="center"><img src="images/extranav.jpg" name="extranav" usemap="#extranavMap" id="extranav" border="0" height="25" width="621" /> <map name="extranavMap" id="extranavMap"><area shape="rect" coords="473,3,607,23" href="mailto:info@gjelavoie.com" alt="Inscrivez-nous" /><area shape="rect" coords="5,3,148,24" href="contact.htm" alt="Contactez-nous" /></map>
 </div>
 <h1>Le Frontenac Phase I</h1>
-<h3><big>Vente au plus offrant - Fin de la réception
+<h3><big>Vente au plus offrant <sup>(1)</sup>
+- Fin de la réception
 des
-offres:</big> &nbsp;<big><big><span style="font-style: italic;">30
-Janvier 2012</span></big></big><br />
+offres:</big> &nbsp;<big><span style="font-style: italic;">30
+Janvier 2012</span></big><br />
 </h3>
 <div align="right">
-<table style="text-align: left; width: 621px; height: 53px;" border="0" cellpadding="0" cellspacing="0">
+<table style="text-align: left; width: 620px; height: 211px;" border="0" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
-<td style="font-weight: bold; background-color: rgb(204, 204, 204); height: 25px;"><big>Unité</big></td>
-<td style="background-color: rgb(204, 204, 204); font-weight: bold;"><big>Prix
-de départ</big></td>
-<td style="background-color: rgb(204, 204, 204); font-weight: bold;"><big>Prix
-accepté en cours</big></td>
-<td style="background-color: rgb(204, 204, 204); font-weight: bold;">
-<big>Action</big></td>
-</tr>
-<tr>
-<td>Garage&nbsp;Unité &nbsp;#28<br />(Cadastral #4 362 580)</td>
-<td>15, 000 $ &nbsp; (+taxes)</td>
-<td>...</td>
+<td style="font-weight: bold; background-color: rgb(204, 204, 204); text-align: center; width: 100px; height: 25px;"><big>Unité</big></td>
+<td style="background-color: rgb(204, 204, 204); font-weight: bold; width: 100px; text-align: center; height: 18px;"><big>Prix
+de <br />
+départ</big></td>
+<td style="background-color: rgb(204, 204, 204); font-weight: bold; text-align: center; height: 10px;"><big>Prix&nbsp;accepté
 <br />
-<td>
-<div class="demo-button"><a id="show-promotion-question" href="#"><span>Make
-an offer</span></a>
-</div>
-<div class="big-button"><a id="show-promotion-question" href="#"><span>Buy
-it
-Now</span></a>
-</div>
+en<br />
+&nbsp;cours</big></td>
+<td style="background-color: rgb(204, 204, 204); font-weight: bold; text-align: center;">
 </td>
 </tr>
 <tr>
-<td>Stationnement extérieur: #68 &nbsp;<br />(Cadastral #4 362 549)</td>
-<td>&nbsp; &nbsp;2, 500 $ &nbsp; (+taxes)</td>
-<td>...</td>
+<td style="text-align: center;">Garage <br />
+Unité &nbsp;#28
+</td>
+<td style="text-align: center;">15 000 $<br />
+(+taxes)</td>
+<td id="divPrixGarage" style="text-align: center;"></td>
+<td style="text-align: center;">
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td></td>
 <td>
-<div class="demo-button"><a id="show-promotion-question" href="#"><span>Make
-an offer</span></a>
-</div>
-<div class="big-button"><a id="show-promotion-question" href="#"><span>Buy
-it
-Now</span></a>
+<div class="demo-button"><a id="show-promotion-question" href="#"><span>Enchérir
+</span></a></div>
+</td>
+<td></td>
+<td>
+<div class="big-button"><a id="show-promotion-question" href="#"><span>Acheter
+maintenant $20k</span></a>
 </div>
 </td>
 </tr>
 </tbody>
 </table>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;">Stationnement
+extérieur<br />
+Unit/ #68 &nbsp;<br />
+</td>
+<td style="text-align: center;">2 500 $<br />
+(+taxes)</td>
+<td id="divPrixStat" style="text-align: center;"></td>
+<td>
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td></td>
+<td>
+<div class="demo-button"><a id="show-promotion-question" href="#"><span>Enchérir
+</span></a></div>
+</td>
+<td></td>
+<td>
+<div class="big-button"><a id="show-promotion-question" href="#"><span>Acheter
+maintenant $5k</span></a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr><tr style="font-style: italic;"><td colspan="4" rowspan="1"><br />(1) Voir les règlements affichés dans l'entrée principale du bâtiment.</td></tr>
+</tbody>
+</table>
+<p><br /></p>
 </div>
 </td>
 </tr>
@@ -97,5 +132,9 @@ Now</span></a>
 </tr>
 </tbody>
 </table>
-<map name="Map" id="Map"><area shape="rect" coords="646,87,758,105" href="mailto:info@gjelavoie.com" alt="info@gjelavoie.com" /></map>
+<map name="Map" id="Map"><area shape="rect" coords="646,87,758,105" href="mailto:info@gjelavoie.com" alt="info@gjelavoie.com" /></map>à
+<script src="https://spreadsheets.google.com/feeds/cells/0Au1jGYIc6z0idHQzNmVTdHBwWVJ5bUIxLUhIejl1NFE/1/public/values/R1C1?alt=json-in-script&callback=afficherPrixGarage"></script>  
+<script src="https://spreadsheets.google.com/feeds/cells/0Au1jGYIc6z0idFlxMHM3c0FfYldyaWJGNmFjUW1nZXc/1/public/values/R1C1?alt=json-in-script&callback=afficherPrixStat"></script> 
+
+
 </body></html>
